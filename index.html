@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta 
+    name="viewport" 
+    content="target-densitydpi=device-dpi; width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0;" 
+ />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FallenNinja's Star Wars Fake-RPG</title>
+    <!-- Link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+    <!-- Link to the Bootstrap library -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Link to "style" CSS file -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Link to "reset" CSS file -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+
+    <!-- google font stylesheet -->
+    <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+</head>
+
+<body>
+
+        <audio autoplay loop>
+                <source src="./assets/Star Wars Main Theme (Full).mp3">
+          </audio>
+
+    <!-- Overall Bootstrap grid -->
+  <div class="container">
+
+        <!-- Jumbotron with title -->
+        <div class="jumbotron border border-warning" id="jumbotron1">
+
+          
+          <h1><img src="./assets/images/starwarslogo.png" alt="Star Wars Logo" id="starwarslogo"><strong></strong>BATTLE!</strong></h1>
+    
+        </div> <!-- End Jumbotron -->
+
+
+        
+
+
+        <!-- Contents of the game-->
+        <div class="row">
+    
+          <!-- Fight section -->
+          <div class="col-lg-12" id="fight-section">
+            <button id="attack" class="btn btn-danger fight-text">ATTACK</button>
+          </div> <!-- End fight section -->
+    
+          <!-- Defender section -->
+          <div class="col-lg-12" id="defender-section">
+            <h2 class="fight-text"></h2>
+          </div> <!-- End defender section -->
+
+        <!-- Your chosen character -->
+        <div class="col-lg-12" id="chosen-character">
+            <h2 class="un-needed-text"></h2>
+        </div> <!-- End your chosen character-->
+        </div>
+
+        <!-- Enemies available to attack -->
+        <div class="col-lg-12 jumbotron border border-warning" id="enemies-available">
+            <h1 class="un-needed-text">SELECT YOUR OPPONENT!</h1>
+        </div> <!-- End enemies available to attack -->
+    
+          <!-- Game message section -->
+          <div class="col-lg-12" id="message-section">
+            <div id="game-message"></div>
+            <button id="restart" class="btn btn-warning">PLAY AGAIN</button>
+          </div> <!-- Game message section -->
+
+          
+
+                    <!-- Available characters -->
+                    <div class="col-lg-12 jumbotron border border-warning" id="characters-available" id="jumbotron2">
+                            <p id="chooseFighter">SELECT YOUR FIGHTER!</p>
+
+                        <span class="character-image available-character ml-2" id="vader-character">
+                            <img src="./assets/images/VaderFront.png" alt="Darth Vader Character" id="vader-image" style="max-width: 265px;">
+                            <p class="alert alert-dark character-text">Darth Vader</p>
+                            <p class="health btn badge badge-danger">Health: 2000</p>
+                        </span>
+                    
+                        <span class="character-image available-character" id="luke-character">    
+                            <img src="./assets/images/LukeFront.png" alt="Luke Skywalker Character" id="luke-image" style="max-width: 265px;">
+                            <p class="alert alert-dark character-text">Luke Skywalker</p>
+                            <p class="health btn badge badge-danger">Health: 1700</p>
+                        </span>
+                    
+                        <span class="character-image available-character" id="nien-character">
+                            <img src="./assets/images/NienFront.png" alt="Nien Character" id="nien-image" style="max-width: 265px;">
+                            <p class="alert alert-dark character-text">Nien</p>
+                            <p class="health btn badge badge-danger">Health: 750</p>
+                        </span>
+                    
+                        <span class="character-image available-character" id="greedo-character">
+                            <img src="./assets/images/GreedoFront.png" alt="Greedo Character" id="greedo-image" style="max-width: 265px;">
+                            <p class="alert alert-dark character-text">Greedo</p>
+                            <p class="health btn badge badge-danger">Health: 400</p>
+                        </span>
+                    </div> <!-- End available characters -->
+
+
+    
+        </div> <!-- End contents of the game -->
+    
+      </div> <!-- End Bootstrap grid -->
+    
+      <script type="text/javascript" src="./assets/javascript/game.js"></script>
+    
+</body>
+
+</html>
